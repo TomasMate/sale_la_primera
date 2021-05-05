@@ -4,4 +4,8 @@ Rails.application.routes.draw do
                                  # al controlador pages_controller (solo pongo pages y rails entiende que es ese) y a la 
                                  # accion about del controlador (hay que definirla). Esta acción por defecto va a buscar la 
                                  # pagina que se llame como la accion "about". Si no esta me tira error, tengo que crearla.
-end
+
+
+  resources :articles, only: [:show]
+
+ end
