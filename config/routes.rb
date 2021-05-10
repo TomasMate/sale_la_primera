@@ -6,6 +6,6 @@ Rails.application.routes.draw do
                                  # pagina que se llame como la accion "about". Si no esta me tira error, tengo que crearla.
 
 
-  resources :articles, only: [:show, :index, :new, :create, :edit, :update]
+  resources :articles            #resources :articles, only: [:show, :index, :new, :create, :edit, :update, :destroy]
 
  end

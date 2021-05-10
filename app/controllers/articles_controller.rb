@@ -41,5 +41,11 @@ def update
         end        
 end
 
+def destroy
+    @article = Article.find(params[:id])      #Destroy no tiene acceso por route. Tengo que traerlo de otro lado (agregando link)
+    @article.destroy
+    flash[:notice] = "Article was Deleted successfully."
+    redirect_to articles_path
+end
 
 end
